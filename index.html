@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Design Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </link>
   </head>
   <body>
   
@@ -15,30 +17,33 @@
       </div>
       <div>
         <ul class="list">
-          <li class="list-item">
+          <li class="list-items">
             Home
             <img src="./assets/caret-down-solid.svg" alt="caret" />
           </li>
-          <li class="list-item">Project</li>
-          <li class="list-item">About</li>
-          <li class="list-item">Contact</li>
-          <li class="list-item">
+          <li class="list-items">Project</li>
+          <li class="list-items">About</li>
+          <li class="list-items">Contact</li>
+          <li class="list-items">
             Other page
             <img src="./assets/caret-down-solid.svg" alt="caret" />
           </li>
         </ul>
+        <div class="burger-icon">
+          <i class="fa fa-bars color-white" aria-hidden="true"></i>
+        </div>
       </div>
     </nav>
 
-    <!-- hero section -->
+    
     <section class="hero-section">
-      <div class="hero-left">
-        <img src="./assets/brandman.png" alt="Profile-Man" />
+      <div class="left-area">
+        <img src="./assets/brandman.png" alt="Brand-Man" />
       </div>
-      <div class="hero-right">
-        <p class="greeting">Hello I'm Shashanka</p>
+      <div class="right-area">
+        <p class="intro">Hello I'm Arthur</p>
         <h1>Visual Designer</h1>
-        <p class="hero-content">
+        <p class="intro-content">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim,
           deserunt mollitia laborum sit vel ipsa quibusdam, autem quasi nulla
           illum soluta ad, ut aperiam cumque.
@@ -47,8 +52,8 @@
       </div>
     </section>
 
-    <!-- Services section -->
-    <div class="service-overlay"></div>
+    
+    <div class="service-area"></div>
     <section class="services-section">
       <div class="service-cards">
         <div class="service-card">
@@ -59,7 +64,7 @@
         </div>
 
         <div class="service-card active">
-          <img src="./assets/product-design.png" alt="product-design" />
+          <img src="./assets/product-design.png" alt="product" />
           <h2>Product Design</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           <h5>KNOW MORE &#8594;</h5>
@@ -73,12 +78,12 @@
         </div>
       </div>
 
-      <div class="statistics-section">
-        <div class="left-section">
+      <div class="stats-section">
+        <div class="left-stat">
           <h1>12</h1>
           <p>Years Experience</p>
         </div>
-        <div class="right-section">
+        <div class="right-stat">
           <div class="stats-card">
             <h2>60+</h2>
             <p>Clients</p>
@@ -101,8 +106,8 @@
       </div>
     </section>
 
-    <section class="projects-section">
-      <div class="projects-header">
+    <section class="projects">
+      <div class="projects-head">
         <div>
           <h2>FEATURED PROJECTS</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>

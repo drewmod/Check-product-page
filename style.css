@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --red: #c91b28;
+  --red: #ae0d17;
 }
 
 * {
@@ -12,7 +12,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #111111;
+  background-color: rgb(7, 6, 6);
   color: #ffffff;
 }
 
@@ -20,10 +20,9 @@ button {
   cursor: pointer;
 }
 
-/* ----------- Navbar start ----------- */
 
 nav {
-  padding: 2% 10% 0 6%;
+  padding: 2% 3%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,7 +42,7 @@ nav .list {
   text-transform: uppercase;
 }
 
-nav .list-item {
+nav .list-items {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -53,48 +52,49 @@ nav .list-item {
   font-weight: 700;
 }
 
-nav .list-item img {
+nav .list-items img {
   padding-left: 5px;
   height: 16px;
 }
 
-/* ----------- Navbar end ----------- */
+nav .burger-icon{
+  display: none;
+}
 
-/* ----------- Hero section start ----------- */
 
 .hero-section {
   display: flex;
   flex-direction: row;
-  padding: 3% 10% 0 6%;
+  padding: 4% 12%;
 }
 
-.hero-left img {
+.left-area img {
   height: 550px;
 }
 
-.hero-right {
+.right-area {
   padding: 12% 0;
 }
 
-.hero-right .greeting {
+.right-area .intro {
   color: var(--red);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 20px;
 }
 
-.hero-right h1 {
-  font-weight: 700;
+.right-area h1 {
+  font-weight: 800;
   font-size: 66px;
 }
 
-.hero-right .hero-content {
+.right-area .intro-content {
   margin-top: 10px;
   line-height: 1.5;
   width: 80%;
   margin-bottom: 30px;
 }
 
-.hero-right button {
+.right-area button {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   background-color: var(--red);
@@ -103,12 +103,10 @@ nav .list-item img {
   border: none;
 }
 
-/* ----------- Hero section end ----------- */
 
-/* ----------- Services section start ----------- */
 
-.service-overlay {
-  height: 720px;
+.service-area {
+  height: 730px;
   width: 50%;
   background-color: #181818;
   z-index: -1;
@@ -162,24 +160,24 @@ nav .list-item img {
   color: #ffffff;
 }
 
-.statistics-section {
+.stats-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 8% 7%;
   text-align: center;
 }
 
-.statistics-section .left-section {
+.stats-section .left-stat {
   padding: 10% 2%;
 }
 
-.statistics-section .left-section h1 {
+.stats-section .left-stat h1 {
   color: var(--red);
   font-size: 84px;
   font-weight: 900;
 }
 
-.statistics-section .left-section p {
+.stats-section .left-stat p {
   font-weight: 700;
   font-size: 24px;
 }
@@ -190,45 +188,43 @@ nav .list-item img {
   margin: 2%;
 }
 
-.stats-card h2 {
+.stats-card > h2 {
   color: var(--red);
   font-size: 36px;
 }
 
-.stats-card p {
+.stats-card > p {
   margin: 10px;
 }
 
-/* ----------- Services section end ----------- */
 
-/* ----------- Projects section start ----------- */
 
-.projects-section {
+.projects {
   margin-top: 780px;
   padding: 0 12% 0 10%;
   margin-bottom: 50px;
 }
 
-.projects-header {
+.projects-head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.projects-header div:first-child h2 {
+.projects-head div:first-child h2 {
   font-weight: 800;
 }
 
-.projects-header div:first-child p {
+.projects-head div:first-child p {
   margin-top: 10px;
   font-weight: 400;
 }
 
-.projects-header div:last-child {
+.projects-head div:last-child {
   text-align: right;
 }
 
-.projects-header div:last-child button {
+.projects-head div:last-child button {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   background-color: var(--red);
@@ -256,20 +252,18 @@ nav .list-item img {
   width: 100%;
 }
 
-.project-card h3 {
+.project-card > h3 {
   font-weight: 900;
   margin: 20px 0 10px 0;
   font-size: 22px;
 }
 
-.project-card h5 {
+.project-card > h5 {
   color: var(--red);
   font-size: 16px;
 }
 
-/* ----------- Projects section end ----------- */
 
-/* ----------- Contact section start ----------- */
 
 .contact-section {
   margin: 2% 10%;
@@ -285,7 +279,7 @@ nav .list-item img {
   width: 50%;
 }
 
-.contact-left h1 {
+.contact-left > h1 {
   font-size: 44px;
 }
 
@@ -309,7 +303,7 @@ nav .list-item img {
   border: none;
 }
 
-/* ----------- Contact section end ----------- */
+
 
 .footer-links {
   display: flex;
@@ -319,7 +313,7 @@ nav .list-item img {
   margin-bottom: 3%;
 }
 
-.footer-links p {
+.footer-links > p {
   margin: 0 3%;
   cursor: pointer;
   text-transform: uppercase;
@@ -327,7 +321,7 @@ nav .list-item img {
   font-weight: 700;
 }
 
-/* ----------- Footer section start ----------- */
+
 
 footer {
   display: flex;
@@ -352,4 +346,101 @@ footer {
 .footer-right img {
   height: 24px;
   cursor: pointer;
+}
+
+
+/* @media only screen and (max-width: 950px) {
+    nav .list-item{
+        display: none;
+    }
+    nav .burger-icon{
+        display: block;
+        margin: auto;
+    } */
+@media only screen and (max-width: 900px) {
+  nav .list {
+    display: none;
+  }
+  nav .burger-icon {
+    display: inline-block;
+  }
+  .left-area {
+    margin: 0 -70px;
+  }
+  .right-area {
+    padding-bottom: 1em;
+  }
+  .service-card {
+    padding: 1em;
+  }
+  .service-card img {
+    height: 50px;
+  }
+  .stats-section .left-stat {
+    padding: 30% 2%;
+  }
+  .stats-section .left-stat > h1 {
+    font-size: 66px;
+  }
+  .project-card {
+    margin: 10px;
+  }
+  .project-card-header {
+    padding: 30px;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-left {
+    width: 100%;
+    margin: 2% auto;
+  }
+  .footer-right {
+    width: 30%;
+    margin-right: 30%;
+  }
+  .contact-left > h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-icon,
+  nav .logo img {
+    height: 26px;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .left-area {
+    margin: 2% 0;
+  }
+  .left-area img {
+    height: 330px;
+  }
+  .services-section {
+    position: relative;
+    background: #111111;
+  }
+  .service-cards {
+    flex-direction: column;
+  }
+  .service-card {
+    margin-bottom: 20px;
+  }
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+  .stats-section .left-stat {
+    padding: 5% 2%;
+  }
+  .projects {
+    margin-top: 750px;
+  }
+  .projects-cards {
+    grid-template-columns: 1fr;
+  }
+  .footer-links {
+    margin: 10%;
+  }
 }
